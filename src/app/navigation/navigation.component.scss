@@ -1,0 +1,114 @@
+//COLOR
+$whiteText : #f1f1f1;
+$burlywood : #deb887;
+
+//BASE
+mat-sidenav-container {
+  height: 100%;
+
+  mat-sidenav, mat-sidenav-content {
+    padding: 16px;
+  }
+
+  mat-sidenav {
+    display:table;
+    width:400px;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../../assets/images/sidebar-coffee.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height:100%;
+    color: #fff;
+
+    div {
+      .closingBtn {
+        display: block;
+        margin-left: auto;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        height: 200px;
+      }
+    }
+
+    .navLinkUl {
+      margin: 20% 20px;
+
+      ul {
+        list-style: none;
+        margin-top: 75px;
+
+        li {
+          padding-left: 15px;
+
+          a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            transition: ease-in-out 0.2s;
+
+
+
+            &:hover {
+              padding-left: 30px;
+              transition: ease-in-out 0.2s;
+              color: $burlywood;
+            }
+          }
+        }
+      }
+    }
+
+    .socialIcon {
+      display: block;
+      margin: 0 auto;
+
+      ul {
+        list-style: none;
+        margin-left: 16px;
+
+        li {
+          display: inline;
+
+          a {
+            margin: 10px 15px;
+
+            &:hover {
+
+              i {
+                color: $burlywood;
+                transition: all 0.3s;
+              }
+            }
+
+            i {
+              color: $whiteText;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  mat-sidenav-content {
+    padding: 0;
+
+    .spreadSideNav {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: $whiteText;
+
+
+    }
+
+    button {
+      z-index: 100;
+    }
+  }
+}

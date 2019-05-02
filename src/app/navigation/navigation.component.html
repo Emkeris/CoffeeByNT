@@ -1,0 +1,43 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="over" #sidenav [(opened)]="opened">
+    <div>
+        <button mat-button (click)="sidenav.close()" class="closingBtn"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div>
+      <img src="../../assets/images/coffeeLogo.png" alt="Coffee logo" >
+    </div>
+
+    <div class="navLinkUl">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">MOMENTS</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CATERING</a></li>
+        <li><a href="#">STORY</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <div class="socialIcon">
+      <ul>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+      </ul>
+    </div>
+
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="spreadSideNav">
+    </div>
+    <button mat-raised-button (click)="sidenav.open()">open side nav</button>
+
+    <app-header></app-header>
+
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
