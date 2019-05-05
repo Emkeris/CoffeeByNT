@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { HeaderSectionsComponent } from './header-sections/header-sections.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AboutUsShortComponent } from './about-us/about-us-short/about-us-short.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { AboutUsShortComponent } from './about-us/about-us-short/about-us-short.
     HeaderSectionsComponent,
     AboutUsComponent,
     AboutUsShortComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

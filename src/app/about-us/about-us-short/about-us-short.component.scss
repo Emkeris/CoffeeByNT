@@ -1,0 +1,24 @@
+@import '../../../styles.scss';
+
+//base
+section {
+  background-image: url(../../../assets/images/mainBg.jpg);
+  @include bgCover();
+
+  .container {
+    padding: 150px 10%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+
+    h2 {
+      font-size: 35px;
+      letter-spacing: 5px;
+    }
+
+    p {
+      margin-top: 30px;
+    }
+  }
+
+}
