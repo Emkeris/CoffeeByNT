@@ -118,11 +118,21 @@ mat-sidenav-container {
         color: white;
         border: solid 1px white;
 
-        &:hover {
+        // &:hover {
 
-        }
+        // }
       }
     }
 
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  mat-sidenav-container {
+    height: 100%;
+
+    mat-sidenav {
+      width: 100%;
+    }
   }
 }

@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationComponent implements OnInit {
   opened = false;
 
+  navBtnClicked() {
+    this.opened = false;
+  }
+
   constructor() { }
 
   ngOnInit() {

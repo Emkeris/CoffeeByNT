@@ -57,6 +57,7 @@ $footerBaseColor: #313638;
         border-radius: none;
         padding: 6px 40px;
         font-size: 1.3rem;
+        transition: all 0.5s;
 
         &:hover {
           color: $footerBaseColor;
@@ -101,6 +102,7 @@ $footerBaseColor: #313638;
           border-radius: 27px;
           -moz-border-radius:27px;
           -webkit-border-radius:27px;
+          transition: all 0.7s;
 
           &:hover {
             background-color: #fff;
@@ -128,5 +130,62 @@ $footerBaseColor: #313638;
     }
   }
 }
+
+@media only screen and (max-width: 630px) {
+  div {
+    .inputas {
+      max-width: 400px;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  #companyLogoFooter {
+    max-height: 150px;
+  }
+
+  div {
+    .inputas {
+      max-width: 350px;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  #mygtukasFooter {
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .inputas {
+
+    #inputInner {
+      padding-right: 0;
+
+      .inputas {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container-fluid {
+    padding: 50px 10px;
+  }
+  .inputas {
+    width: 280px;
+
+      .inputas {
+        max-width: 100%;
+      }
+
+  }
+}
+
+
 
 

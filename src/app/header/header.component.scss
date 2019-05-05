@@ -34,3 +34,25 @@ video {
   }
 }
 
+@media only screen and (max-width: 860px) {
+
+  .onVidDarken {
+    .logoHeader {
+      img {
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 569px) {
+
+  .onVidDarken {
+    .logoHeader {
+      img {
+        height: 200px;
+      }
+    }
+  }
+}
+

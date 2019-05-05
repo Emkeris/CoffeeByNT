@@ -1,4 +1,4 @@
-@import '../../styles.scss';
+@import '../../../styles.scss';
 
 // base
 
@@ -49,31 +49,31 @@ section {
     }
 
     .firsHSectags {
-      background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/moments.jpg);
+      background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../../assets/images/moments.jpg);
       @include bgCover();
 
       &:hover {
-        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/moments.jpg);
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/images/moments.jpg);
         @include bgCover();
       }
     }
 
     .secHSectags {
-      background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/catering.jpg);
+      background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../assets/images/catering.jpg);
       @include bgCover();
 
       &:hover {
-        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/catering.jpg);
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/images/catering.jpg);
         @include bgCover();
       }
     }
 
     .thrHSectags {
-      background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/manhattan.jpg);
+      background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../assets/images/manhattan.jpg);
       @include bgCover();
 
       &:hover {
-        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url(../../assets/images/manhattan.jpg);
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url(../../../assets/images/manhattan.jpg);
         @include bgCover();
       }
     }

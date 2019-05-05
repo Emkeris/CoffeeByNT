@@ -8,12 +8,12 @@
     </div>
     <div class="navLinkUl">
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">MOMENTS</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">CATERING</a></li>
-        <li><a href="#">STORY</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a [routerLink]="['/']" routerLinkActive="router-link-active" (click)="navBtnClicked()">HOME</a></li>
+        <li><a [routerLink]="['/moments']" (click)="navBtnClicked()">MOMENTS</a></li>
+        <li><a [routerLink]="['/']" (click)="navBtnClicked()">BLOG</a></li>
+        <li><a [routerLink]="['/']" (click)="navBtnClicked()">CATERING</a></li>
+        <li><a [routerLink]="['/']" (click)="navBtnClicked()">STORY</a></li>
+        <li><a [routerLink]="['/contact']"(click)="navBtnClicked()">CONTACT</a></li>
       </ul>
     </div>
 
@@ -33,11 +33,8 @@
       <button mat-button (click)="sidenav.open()">open side nav</button>
     </mat-toolbar>
 
-    <app-header></app-header>
-
     <router-outlet></router-outlet>
 
     <app-footer></app-footer>
-
   </mat-sidenav-content>
 </mat-sidenav-container>
