@@ -109,12 +109,11 @@ mat-sidenav-container {
 
     #spreadSideNav {
       position: fixed;
-      // width: 100%;
-       background: rgba(black, 0.3);
-      // color: $whiteText;
+      background: rgba(black, 0.3);
+      z-index: 100;
 
       button {
-        z-index: 100;
+
         color: white;
         border: solid 1px white;
 

@@ -1,4 +1,5 @@
-
+$textGray: #999;
+$footerBaseColor: #313638;
 
 @mixin bgCover {
   background-repeat: no-repeat;
@@ -14,4 +15,6 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Marcellus', serif; }
+
+
 
