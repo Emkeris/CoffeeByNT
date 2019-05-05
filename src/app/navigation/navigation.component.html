@@ -5,7 +5,7 @@
     </div>
 
     <div>
-      <img src="../../assets/images/coffeeLogo.png" alt="Coffee logo" >
+      <img src="../../assets/images/coffee-vintage.png" alt="Coffee logo" >
     </div>
 
     <div class="navLinkUl">
@@ -31,9 +31,9 @@
 
   </mat-sidenav>
   <mat-sidenav-content>
-    <div class="spreadSideNav">
-    </div>
-    <button mat-raised-button (click)="sidenav.open()">open side nav</button>
+    <mat-toolbar id="spreadSideNav">
+      <button mat-button (click)="sidenav.open()">open side nav</button>
+    </mat-toolbar>
 
     <app-header></app-header>
 

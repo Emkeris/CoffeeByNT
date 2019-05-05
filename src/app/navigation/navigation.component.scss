@@ -1,3 +1,12 @@
+@import '../../styles.scss';
+
+//MIXIN
+// @include box-shaodw-white {
+//   -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+//   -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+//   box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+// }
+
 //COLOR
 $whiteText : #f1f1f1;
 $burlywood : #deb887;
@@ -28,13 +37,14 @@ mat-sidenav-container {
 
       img {
         display: block;
-        margin: 0 auto;
-        height: 200px;
+        margin: 25px auto;
+        height: 180px;
+        filter: invert(85%);
       }
     }
 
     .navLinkUl {
-      margin: 20% 20px;
+      margin: 10% 20px 20% 20px;
 
       ul {
         list-style: none;
@@ -74,7 +84,7 @@ mat-sidenav-container {
           display: inline;
 
           a {
-            margin: 10px 15px;
+            padding: 10px 15px;
 
             &:hover {
 
@@ -97,18 +107,22 @@ mat-sidenav-container {
   mat-sidenav-content {
     padding: 0;
 
-    .spreadSideNav {
+    #spreadSideNav {
       position: fixed;
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      color: $whiteText;
+      // width: 100%;
+       background: rgba(black, 0.3);
+      // color: $whiteText;
 
+      button {
+        z-index: 100;
+        color: white;
+        border: solid 1px white;
 
+        &:hover {
+
+        }
+      }
     }
 
-    button {
-      z-index: 100;
-    }
   }
 }
