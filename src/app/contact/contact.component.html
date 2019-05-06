@@ -17,14 +17,35 @@
   </div>
 
   <div class="container">
-    <form>
-      <input type="text" placeholder="NAME">
-      <input type="text" placeholder="LASTNAME">
-      <input type="number" placeholder="PHONE NUMBER">
-      <input type="number" placeholder="EMAIL">
-      <textarea cols="30" rows="10" placeholder="MESSAGE"></textarea>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmitContacts()">
+      <input type="text" placeholder="NAME" formControlName="name">
+      <div *ngIf="submitedContacts && contactForm.controls['name'].errors" class="failedValidationContact">
+        <p *ngIf="contactForm.controls['name'].errors.required">Please Enter your Name</p>
+      </div>
+      <input type="text" placeholder="LASTNAME" formControlName="lastName">
+      <div *ngIf="submitedContacts && contactForm.controls['lastName'].errors" class="failedValidationContact">
+        <p *ngIf="contactForm.controls['lastName'].errors.required">Please Enter your Surname</p>
+      </div>
+      <input type="number" placeholder="PHONE NUMBER" formControlName="phoneNumber">
+      <div *ngIf="submitedContacts && contactForm.controls['phoneNumber'].errors" class="failedValidationContact">
+        <p *ngIf="contactForm.controls['phoneNumber'].errors.required">Please Enter your Phone Number</p>
+        <p *ngIf="contactForm.controls['phoneNumber'].errors.pattern">Please Enter your real Phone Number</p>
+      </div>
+      <input type="email" placeholder="EMAIL" formControlName="email">
+      <div *ngIf="submitedContacts && contactForm.controls['email'].errors" class="failedValidationContact">
+        <p *ngIf="contactForm.controls['email'].errors.required">Please Enter your Email</p>
+        <p *ngIf="contactForm.controls['email'].errors.email">Please Enter your Email</p>
+      </div>
+      <textarea cols="30" rows="10" placeholder="MESSAGE" formControlName="message"></textarea>
+      <div *ngIf="submitedContacts && contactForm.controls['message'].errors" class="failedValidationContact">
+        <p *ngIf="contactForm.controls['message'].errors.required">Please Enter your Message.</p>
+        <p *ngIf="contactForm.controls['message'].errors.minlength">Please Enter your Message. Minimum of 3 words</p>
+      </div>
       <button type="submit" class="formBtn">SUBMIT</button>
     </form>
+    <div *ngIf="successContacts">
+      <p>Thank you for your question. We will contact you as soon as possible</p>
+    </div>
   </div>
 
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.841171427306!2d-0.24140414845029293!3d52.57248347972516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877f055d3168d03%3A0xcd53906a57999a5!2sPeterborough+Cathedral!5e0!3m2!1sen!2suk!4v1557074573902!5m2!1sen!2suk" frameborder="0" allowfullscreen></iframe>

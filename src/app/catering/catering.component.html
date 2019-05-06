@@ -1,0 +1,94 @@
+<div class="container-fluid">
+  <div class="headerCatering">
+    <h3>Catering</h3>
+  </div>
+
+  <div class="container">
+    <section>
+      <h2>WE CATER TO YOUR EVENT</h2>
+      <hr>
+      <p>Catering the Olimpico experience to your event. We offer a unique coffee service that caters in and around the Montreal area. Café Olimpico is the only coffee catering service in Montreal that uses commercial grade FAEMA espresso machines on location. Our professional baristas will help deliver the ultimate authentic experience for your event.</p>
+      <br>
+      <p>Fill out the form below and we will contact you soon.</p>
+    </section>
+  </div>
+
+  <!-- form -->
+
+  <div class="container">
+    <form (ngSubmit)="onSubmitCatering()" [formGroup]="cateringForm">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <input type="date" placeholder="DATE" formControlName="date">
+              <div *ngIf="submitedCateringForm && this.cateringForm.controls['date'].errors">
+                <p *ngIf="this.cateringForm.controls['date'].errors.required">Please choose date that suits you</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <input type="number" placeholder="# OF PEOPLE" formControlName="numbOfPeople">
+              <div *ngIf="submitedCateringForm && this.cateringForm.controls['numbOfPeople'].errors" class="failedValidationContact">
+                <p *ngIf="this.cateringForm.controls['numbOfPeople'].errors.required">Please Enter the amount of people</p>
+                <p *ngIf="this.cateringForm.controls['numbOfPeople'].errors.max">Sorry, but we only serve up to 80 people </p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <input type="text" placeholder="EVENT TYPE" formControlName="eventType">
+              <div *ngIf="submitedCateringForm && this.cateringForm.controls['eventType'].errors" class="failedValidationContact">
+                <p *ngIf="this.cateringForm.controls['eventType'].errors.required">Please Enter Event Type you are requesting</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <input type="number" placeholder="PHONE NUMBER" formControlName="phoneNumber">
+              <div *ngIf="submitedCateringForm && this.cateringForm.controls['phoneNumber'].errors" class="failedValidationContact">
+                <p *ngIf="this.cateringForm.controls['phoneNumber'].errors.required">Please Enter your Phone Number</p>
+                <p *ngIf="this.cateringForm.controls['phoneNumber'].errors.pattern">Please Enter your real Phone Number</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-lg-6">
+              <input type="time" placeholder="TIME"></div>
+            <div class="col-lg-6">
+              <input type="number" placeholder="# OF HOURS" formControlName="hours">
+              <div *ngIf="submitedCateringForm && this.cateringForm.controls['hours'].errors" class="failedValidationContact">
+                <p *ngIf="this.cateringForm.controls['hours'].errors.required">Please Enter the amount of hours you are planing to stay</p>
+                <p *ngIf="this.cateringForm.controls['hours'].errors.max">Sorry, but we only serve up to 12H</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <input type="email" placeholder="EMAIL" formControlName="email">
+              <div *ngIf="submitedCateringForm && this.cateringForm.controls['email'].errors" class="failedValidationContact">
+                <p *ngIf="this.cateringForm.controls['email'].errors.required">Please Enter your Email</p>
+                <p *ngIf="this.cateringForm.controls['email'].errors.email">Please Enter your real Email</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <input type="text" placeholder="NAME" formControlName="name">
+              <div *ngIf="submitedCateringForm && this.cateringForm.controls['name'].errors" class="failedValidationContact">
+                <p *ngIf="this.cateringForm.controls['name'].errors.required">Please Enter your Name</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <textarea placeholder="MESSAGE" cols="50" formControlName="message"></textarea>
+          <div *ngIf="submitedCateringForm && this.cateringForm.controls['message'].errors" class="failedValidationContact">
+            <p *ngIf="this.cateringForm.controls['message'].errors.required">Please Enter your Message.</p>
+            <p *ngIf="this.cateringForm.controls['message'].errors.minlength">Please Enter your Message. Minimum of 3 words</p>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="formBtn">BOOK</button>
+      <div *ngIf="successCateringForm">
+        <p>We have receive your request and will contact you as soon as possible and discuss your event</p>
+      </div>
+    </form>
+  </div>
+
+  <!-- /form -->
+</div>

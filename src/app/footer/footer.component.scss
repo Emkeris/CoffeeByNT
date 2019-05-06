@@ -67,7 +67,22 @@ $footerBaseColor: #313638;
         }
       }
     }
+
+    .emailValBlock {
+      div {
+
+        p {
+          display: inline-block;
+          color: white;
+          padding: 10px 20px;
+          border: solid 2px white;
+          margin: 10px;
+        }
+      }
+    }
   }
+
+
 
   .secondFooter {
     position: relative;
@@ -167,6 +182,10 @@ $footerBaseColor: #313638;
 
       .inputas {
         max-width: 300px;
+      }
+
+      p {
+        text-align: center;
       }
     }
   }

@@ -2,20 +2,12 @@
 
 //base
 .contact-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url(../../assets/images/contacts.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/contacts.jpg);
   @include bgCover;
   height: 300px;
 
   h2 {
-    padding: 120px 0;
-    margin: 0;
-    text-align: center;
-    font-size: 3rem;
-    color: #fff;
-    text-shadow: 1px 1px 2px white;
-    letter-spacing: 3px;
-    text-transform: capitalize;
-    font-weight: 200;
+   @include headerH2;
   }
 }
 
@@ -66,6 +58,16 @@ section {
         }
       }
 
+      .failedValidationContact {
+        margin-top: 0;
+
+
+        p {
+          margin-top: 1px;
+          margin-bottom: 25px;
+        }
+      }
+
       textarea {
         display: block;
         padding: 16px 0;
@@ -87,13 +89,17 @@ section {
         color: #000;
         height: 40px;
         display: block;
-        // padding: 16px 0;
         text-align: center;
         border: solid 2px #000;
         letter-spacing: 2px;
         margin: 10px auto;
         width: 100%;
         font-weight: 600;
+
+        &:focus {
+          box-shadow: 0 0 5px rgb(117, 117, 117);
+          outline: none;
+        }
 
       }
     }

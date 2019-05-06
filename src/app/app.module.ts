@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { MaterialModule } from './material/material.module';
 
@@ -15,6 +17,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { MomentsComponent } from './moments/moments.component';
 import { ContactComponent } from './contact/contact.component';
+import { StoryComponent } from './story/story.component';
+import { CateringComponent } from './catering/catering.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -29,12 +34,17 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     MomentsComponent,
     ContactComponent,
+    StoryComponent,
+    CateringComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

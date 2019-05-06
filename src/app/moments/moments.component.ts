@@ -13,17 +13,15 @@ export class MomentsComponent implements OnInit {
   ];
 
   images = [
-    'https://cdn.pixabay.com/photo/2017/01/14/15/11/relaxing-1979674_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2016/02/19/10/21/mug-1209194_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2017/03/27/13/59/adult-2178904_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2015/09/02/13/26/glasses-919071_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2015/07/10/17/53/cheers-839865_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2015/10/12/15/05/girls-984154_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2015/10/12/14/57/campfire-984020_960_720.jpg',
+    'https://images.freeimages.com/images/large-previews/694/volders-party-05-1545434.jpg',
+    'https://images.freeimages.com/images/large-previews/e84/dinner-party-scenes-3-1459510.jpg',
+    'https://images.freeimages.com/images/large-previews/e1e/sydney-beach-scene-1517555.jpg',
+    'https://images.freeimages.com/images/large-previews/964/friends-1308891.jpg',
+    'https://images.freeimages.com/images/large-previews/0e6/campsite-1-1058369.jpg',
+    'https://images.freeimages.com/images/large-previews/a19/kite-surfing-1576083.jpg',
+    'https://images.freeimages.com/images/large-previews/3f3/lonely-friends-1311701.jpg',
     'https://cdn.pixabay.com/photo/2014/05/03/00/42/van-336606_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2016/11/22/19/15/audience-1850119_960_720.jpg'
-
-
+    'https://images.freeimages.com/images/large-previews/77a/young-couple-drinking-coffee-1569632.jpg'
   ];
 
   constructor() { }
