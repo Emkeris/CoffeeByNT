@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MaterialModule } from './material/material.module';
 
@@ -37,6 +38,7 @@ import { BlogComponent } from './blog/blog.component';
     StoryComponent,
     CateringComponent,
     BlogComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,10 @@ import { BlogComponent } from './blog/blog.component';
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

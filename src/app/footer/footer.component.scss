@@ -2,10 +2,14 @@ $footerBaseColor: #313638;
 
 //base
 .container-fluid {
+  position: relative;
   font-family: 'Roboto', sans-serif;
   background-color: $footerBaseColor;
   color: #fff;
   padding: 50px;
+
+
+
 
   .firstFooter {
     text-align: center;
@@ -14,7 +18,8 @@ $footerBaseColor: #313638;
     img {
       max-height: 200px;
       margin: 10px auto;
-      filter: invert(85%);
+      -webkit-filter: invert(85%);
+              filter: invert(85%);
 
     }
 
@@ -57,6 +62,7 @@ $footerBaseColor: #313638;
         border-radius: none;
         padding: 6px 40px;
         font-size: 1.3rem;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
 
         &:hover {
@@ -117,6 +123,7 @@ $footerBaseColor: #313638;
           border-radius: 27px;
           -moz-border-radius:27px;
           -webkit-border-radius:27px;
+          -webkit-transition: all 0.7s;
           transition: all 0.7s;
 
           &:hover {

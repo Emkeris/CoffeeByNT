@@ -35,11 +35,13 @@ section {
           text-transform: uppercase;
           border: solid 2px white;
           border-radius: 0;
+          -webkit-transition: all 0.3s;
           transition: all 0.3s;
 
 
           &:hover {
             @include box-shaodw-white();
+            -webkit-transition: all 0.3s;
             transition: all 0.3s;
           }
 
@@ -49,30 +51,36 @@ section {
     }
 
     .firsHSectags {
+      background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../../assets/images/moments.jpg);
       background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../../assets/images/moments.jpg);
       @include bgCover();
 
       &:hover {
+        background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../../assets/images/moments.jpg);
         background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/images/moments.jpg);
         @include bgCover();
       }
     }
 
     .secHSectags {
+      background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../../assets/images/catering.jpg);
       background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../assets/images/catering.jpg);
       @include bgCover();
 
       &:hover {
+        background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../../assets/images/catering.jpg);
         background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/images/catering.jpg);
         @include bgCover();
       }
     }
 
     .thrHSectags {
+      background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../../assets/images/manhattan.jpg);
       background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../assets/images/manhattan.jpg);
       @include bgCover();
 
       &:hover {
+        background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) , url(../../../assets/images/manhattan.jpg);
         background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url(../../../assets/images/manhattan.jpg);
         @include bgCover();
       }

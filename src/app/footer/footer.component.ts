@@ -27,9 +27,5 @@ export class FooterComponent implements OnInit {
     }
 
     this.success = true;
-
   }
-
-
-
 }

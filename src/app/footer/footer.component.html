@@ -1,44 +1,45 @@
 <div class="container-fluid">
-    <div class="container2 firstFooter">
-      <img src="../../assets/images/coffee-vintage.png" alt="Company logo" id="companyLogoFooter">
-      <h4>Get updates + Sweet Freebies</h4>
-      <p>Sign up to receive an exclusive Offers + News!</p>
-    <!-- form -->
-      <form class="inputas" [formGroup]="subscriptionForm" (ngSubmit)="onSubmitEmail()">
-        <input class="mygtukas" type="submit" value="Join Us" id="mygtukasFooter"/>
-        <div id="inputInner">
-          <input type="text" formControlName="emailOne" placeholder="Your Email">
-        </div>
-      </form>
-    <!-- /form -->
-    <!-- Validators -->
-    <div class="emailValBlock">
-      <div *ngIf="submittedEmail && subscriptionForm.controls['emailOne'].errors">
-        <p *ngIf="subscriptionForm.controls['emailOne'].errors.email">Your email does not work</p>
+  <div class="container2 firstFooter">
+    <img src="../../assets/images/coffee-vintage.png" alt="Company logo" id="companyLogoFooter">
+    <h4>Get updates + Sweet Freebies</h4>
+    <p>Sign up to receive an exclusive Offers + News!</p>
+  <!-- form -->
+    <form class="inputas" [formGroup]="subscriptionForm" (ngSubmit)="onSubmitEmail()">
+      <input class="mygtukas" type="submit" value="Join Us" id="mygtukasFooter"/>
+      <div id="inputInner">
+        <input type="text" formControlName="emailOne" placeholder="Your Email">
       </div>
-      <div class="emailSuccess" *ngIf="submittedEmail">
-        <p *ngIf="success">Thank you for your Interest</p>
-      </div>
+    </form>
+  <!-- /form -->
+  <!-- Validators -->
+  <div class="emailValBlock">
+    <div *ngIf="submittedEmail && subscriptionForm.controls['emailOne'].errors">
+      <p *ngIf="subscriptionForm.controls['emailOne'].errors.email">Your email does not work</p>
     </div>
-    <!-- /Validators -->
-    </div>
-    <div class="container secondFooter">
-      <ul>
-        <li>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </li>
-      </ul>
-      <p>Copyright 2019 NTProductions | Site designe handcrafted by <span>Nerijus Turauskis</span></p>
-    </div>
-    <div class="container">
+    <div class="emailSuccess" *ngIf="submittedEmail">
+      <p *ngIf="success">Thank you for your Interest</p>
     </div>
   </div>
+  <!-- /Validators -->
+  </div>
+  <div class="container secondFooter">
+    <ul>
+      <li>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </li>
+    </ul>
+    <p>Copyright 2019 NTProductions | Site designe handcrafted by <span>Nerijus Turauskis</span></p>
+  </div>
+  <div class="container">
+  </div>
+    <!-- <button class="toTop" (click)="topFunction()"><i class="fas fa-arrow-up"></i></button> -->
+</div>
